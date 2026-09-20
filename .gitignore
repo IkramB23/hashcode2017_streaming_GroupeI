@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+__MACOSX/
+
+# Project outputs
+outputs/*.out
+outputs/*.csv
+outputs/*.png
+!outputs/.gitkeep
+
+# Local logs
+*.log
