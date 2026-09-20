@@ -1,12 +1,12 @@
 # recherche locale (hill climbing) pour le hash code 2017
 #
-# idee (donnee dans le sujet):
-# on part d'une solution deja construite (par un glouton par exemple)
+# idee (donnee présente dans le sujet):
+# on part d'une solution qui est deja construite (par un glouton par exemple)
 # on essaie des petites modifications aleatoires
 # on garde uniquement celles qui ameliorent strictement le score
 #
 # la solution est stockee comme une matrice booleenne (C, V) pour que
-# le FastScorer numpy puisse evaluer chaque mouvement rapidement
+# le FastScorer NUMPY puisse evaluer chaque mouvement rapidement
 #
 # mouvements consideres, tous cites dans le sujet:
 # - add    : ajouter une video a un cache (si ca rentre)
