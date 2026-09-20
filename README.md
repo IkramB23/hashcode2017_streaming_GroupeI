@@ -1,6 +1,6 @@
 # Hash Code 2017 - Streaming Video Caching
 
-Projet d'Advanced Problem Solving.
+Projet Advanced Problem Solving.
 
 **Groupe :** Ikram Benchalal · Nada Zina · Aya Haddoun
 
