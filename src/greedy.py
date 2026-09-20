@@ -5,9 +5,9 @@
 # c'est rapide, mais pas garanti optimal
 #
 # on implemente 3 variantes pour pouvoir les comparer:
-# - greedy_gain     : trie les couples (video, cache) par densite de gain
+# - greedy_gain : trie les couples (video, cache) par densite de gain
 # - greedy_requests : trie les requetes par nombre decroissant
-# - greedy_regret   : trie par "regret" (voir plus bas)
+# - greedy_regret : trie par "regret" (voir plus bas)
 from __future__ import annotations
 
 from collections import defaultdict
@@ -70,7 +70,7 @@ def greedy_by_gain_density(instance: Instance) -> CacheContents:
 # ---------------------------------------------------------------------------
 def greedy_by_requests(instance: Instance) -> CacheContents:
     # variante suggeree dans le sujet:
-    # on trie les requetes par nombre decroissant
+    # on trie les requetes par nombre décroissant
     # pour chaque requete on tente de placer la video dans le cache le plus proche
     solution = _empty_solution(instance)
     remaining = {c: instance.X for c in range(instance.C)}
@@ -95,10 +95,10 @@ def greedy_by_requests(instance: Instance) -> CacheContents:
 
 # ---------------------------------------------------------------------------
 def greedy_by_regret(instance: Instance) -> CacheContents:
-    # variante "regret" citee dans le sujet:
+    # variante "regret" cite dans le sujet:
     # regret = ecart entre les deux plus petites latences accessibles
     # multiplie par le nombre de requetes concernees
-    # un gros regret = rater le meilleur cache coute cher, donc on le traite en 1er
+    # un gros regret = rater le meilleur cache coute cher, donc on le traite en premier
 
     # d'abord on agrege les requetes par (video, endpoint)
     agg: Dict[Tuple[int, int], int] = defaultdict(int)

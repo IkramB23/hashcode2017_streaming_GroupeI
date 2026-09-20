@@ -1,4 +1,4 @@
-# Hash Code 2017 — Streaming Video Caching
+# Hash Code 2017 - Streaming Video Caching
 
 Projet d'Advanced Problem Solving.
 
@@ -10,14 +10,14 @@ Projet d'Advanced Problem Solving.
 
 Google Hash Code 2017. Le principe :
 
-- Il y a **V vidéos**, chacune avec sa taille en MB.
+- Il y a **V vidéos**, chacune avec sa taille en MB
 - Il y a **E endpoints** (des groupes d'utilisateurs). Chaque endpoint est
   connecté au **data center** (latence `L_D`) et à quelques **caches**
-  (chacun avec sa latence `L_c`, toujours plus petite que `L_D`).
-- Il y a **C caches**, tous de la même capacité **X** MB.
-- On a **R descriptions de requêtes** `(vidéo, endpoint, nb_de_requêtes)`.
+  (chacun avec sa latence `L_c`, toujours plus petite que `L_D`)
+- Il y a **C caches**, tous de la même capacité **X** MB
+- On a **R descriptions de requêtes** `(vidéo, endpoint, nb_de_requêtes)`
 
-**On doit décider quelles vidéos mettre dans quels caches**, sans dépasser
+**On doit decider quelles vidéos mettre dans quels caches**, sans dépasser
 la capacité, de manière à **minimiser le temps d'attente moyen**.
 
 Le score officiel est en microsecondes :
